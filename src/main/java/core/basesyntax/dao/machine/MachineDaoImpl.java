@@ -1,9 +1,7 @@
 package core.basesyntax.dao.machine;
 
 import core.basesyntax.dao.AbstractDao;
-import core.basesyntax.model.machine.Car;
 import core.basesyntax.model.machine.Machine;
-import core.basesyntax.model.machine.Truck;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;

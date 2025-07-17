@@ -3,7 +3,6 @@ package core.basesyntax.dao.animal;
 import core.basesyntax.dao.AbstractDao;
 import core.basesyntax.model.zoo.Animal;
 import java.util.List;
-import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -43,7 +42,8 @@ public class AnimalDaoImpl extends AbstractDao implements AnimalDao {
                     .setParameter("prefix", character + "%")
                     .getResultList();
         } catch (Exception e) {
-            throw new RuntimeException("Can't find animals with name starting with " + character, e);
+            throw new RuntimeException("Can't find animals with name starting with "
+                    + character, e);
         }
     }
 }
